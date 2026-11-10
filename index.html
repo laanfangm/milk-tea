@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>今天喝点啥？奶茶大转盘</title>
+    <title>奶茶大转盘</title>
     <style>
         :root {
             --bg1: #f5f7fa;
@@ -168,7 +168,7 @@
             if (isRotating) return;
             isRotating = true;
             btn.disabled = true;
-            resultDiv.innerText = "正在决定你的命运...";
+            resultDiv.innerText = "正在决定是...";
 
             currentRotation += Math.random() * 1800 + 1800;
             canvas.style.transform = `rotate(${currentRotation}deg)`;
